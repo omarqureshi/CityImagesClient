@@ -9,7 +9,7 @@ body {
  }
 
 h1#logo {
-    background-image: url('../images/logotransparent.png');
+    background-image: url('/images/logotransparent.png');
     background-size: contain;
     background-repeat:no-repeat;
     width: 100%;
@@ -44,7 +44,7 @@ h1#logo {
     }
     
 section.map {  
-    background-image: url(../images/map.png);
+    background-image: url(/images/map.png);
     background-position:center;
     background-size: contain 100%;
     background-repeat:no-repeat;
@@ -55,7 +55,7 @@ section.map {
     
 .top-bar {
     background-color:#FFF;
-    background-image: url('../images/bluelogo.png');
+    background-image: url('/images/bluelogo.png');
     background-size: contain;
     background-repeat:no-repeat;    
     background-position:right;    
@@ -75,7 +75,7 @@ section.map {
   margin: 0 8px 0 0;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url(../images/glyphicons.svg);
+  background-image: url(/images/glyphicons.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   vertical-align: top;
@@ -143,15 +143,37 @@ section.map {
  
 
 #step div {
-padding-left:90px;
-min-height:65;
 background-position:bottom left;
+background-repeat:no-repeat;
 }
- 
+
+#directions #previous {
+     background-image: url('/images/arrowleft.png');
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    text-indent: -9999px;
+    width:36px;
+    height:60px;
+}
+#directions #next {
+     background-image: url('/images/arrowright.png');
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    text-indent: -9999px;
+    width:36px;
+    height:60px;
+}
+
 .turn-left {
-  background-image: url(/images/turnleft.png);
+  background-image: url('/images/turnleft.png');
+padding-left:90px;
+min-height:65px;
+text-align:left;
 }
 
 .turn-right {
-  background-image: url(/images/turnright.png);
+  background-image: url('/images/turnright.png');
+padding-left:90px;
+min-height:65px;
+text-align:left;
 }
