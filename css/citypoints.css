@@ -67,7 +67,7 @@ h1#logo a {
          margin-top:0px;   
      }
 section.map {  
-    background-image: url(/images/map.png);
+    background-image: url(/images/map.PNG);
     background-position:center;
     background-size: contain 100%;
     background-repeat:no-repeat;
@@ -185,7 +185,8 @@ section.map {
 
 #next-step-image {
     height: 100%;
-    background-image:url('/images/townhall.jpg');
+    background-image:url('http://cbssacramento.files.wordpress.com/2012/11/club-retro.jpg');
+
     background-position:center;
     background-size: cover;
     background-repeat:no-repeat;    
