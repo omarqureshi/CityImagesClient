@@ -75,16 +75,6 @@ section.map {
     height:400px;
     width: 100%;
 }    
-
-section.map-results {  
-    background-position:center;
-    background-size: contain 100%;
-    background-repeat:no-repeat;
-
-    height:400px;
-    width: 100%;
-}    
-
     
 .top-bar {
     background-color:#FFF;
@@ -181,12 +171,12 @@ section.map-results {
  
 
 #directions {
-    height: 12%;
+    height: 10%;
     background: #046DB2;
 }
 
 #map-canvas {
-    height: 40%;
+    height: 38%;
 }
 
 #next-step-image-container {
@@ -195,7 +185,7 @@ section.map-results {
 
 #next-step-image {
     height: 100%;
-    background-image:url('http://cbssacramento.files.wordpress.com/2012/11/club-retro.jpg');
+    background-image:url('/images/townhall.jpg');
     background-position:center;
     background-size: cover;
     background-repeat:no-repeat;    
@@ -215,14 +205,16 @@ section.map-results {
      bottom:0px;
  }
  
-.infoview h2 {
+#next-step-image .infoview h2 {
     font-size: 1.2em;
     margin: 0.83em 10px 0;
+    color: #fff;
 }
 
-.infoview h3 {
+#next-step-image .infoview h3 {
     font-size: 1em;
     margin: 0.5em 10px 0;
+    color: #fff;
 }
 
 #next, #previous, #step {
