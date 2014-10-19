@@ -26,12 +26,13 @@ h1#logo {
     form.custom .custom.dropdown{
       height: 45px;
     }
-    .search label{
+    .search .textboxes label{
       margin-bottom: 10px;
       color:#FFF;
       height: 48px;
       line-height: 48px;
     }
+    
     form.custom .custom.dropdown{
       padding-top: 5px;
     }
@@ -42,7 +43,13 @@ h1#logo {
       height: 48px;
       line-height: 48px;
     }
-    
+    .sliderLabel {
+    font-size:1.1em;
+    color:#fff;
+    }
+    .range-slider {
+         margin-top:0px;   
+     }
 section.map {  
     background-image: url(/images/map.png);
     background-position:center;
@@ -65,10 +72,15 @@ section.map-results {
     
 .top-bar {
     background-color:#FFF;
-    background-image: url('/images/bluelogo.png');
+    background-image: url('/images/bluelogosml.png');
     background-size: contain;
     background-repeat:no-repeat;    
-    background-position:right;    
+    background-position:right;
+    height:5%;  
+}
+
+.top-bar .name h1 {
+    line-height: 35px;
 }
 
 .top-bar .name h1 a {
@@ -253,6 +265,7 @@ background-repeat:no-repeat;
 padding-left:90px;
 min-height:65px;
 text-align:left;
+    height: 100%;
 }
 
 .turn-right {
@@ -260,5 +273,6 @@ text-align:left;
 padding-left:90px;
 min-height:65px;
 text-align:left;
+    height: 100%;
 }
 
