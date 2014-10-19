@@ -88,7 +88,6 @@ function initialize() {
 
                 var displayStep = function(stepIdx) {
                     var currentStep = steps[stepIdx]
-                    console.log(currentStep);
                     if (currentStep.pois) {
                         showImage(currentStep.pois);
                     } else {
@@ -136,7 +135,6 @@ function initialize() {
                                 });
                                 google.maps.event.addListener(marker, 'click', function() {
                                     $("#next-step-image").css('background-image', 'url(' + poi.image_url + ')');
-                                    console.log(contentForPOI(poi));
                                     $(".infoview").html(contentForPOI(poi));
                                 });
 

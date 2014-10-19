@@ -8,23 +8,33 @@
 	<link rel="stylesheet" href="css/glyphicons.css">
 
     <link rel="stylesheet" href="css/citypoints.css" />
-	
+
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body id="splash">
-    
+
     <div class="row">
       <div class="large-12 columns">
         <h1 id="logo"><a href="search.html">CityPoints</a></h1>
       </div>
     </div>
-    
+
 
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+$(document).ready(function() {
+    if ($("#splash").length > 0) {
+        console.log("HAS SPLASH?")
+        $("#splash h1").click(function() {
+            console.log("CLICKED?")
+            window.location.href = "/search.html";
+        });
+    }
+});
+
     </script>
   </body>
 </html>
