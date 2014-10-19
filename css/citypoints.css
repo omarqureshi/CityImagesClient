@@ -8,7 +8,7 @@ body {
         margin-top:200px;
  }
 
-h1#logo {
+h1#logo a {
     background-image: url('/images/logotransparent.png');
 
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ h1#logo {
          margin-top:0px;   
      }
 section.map {  
-    background-image: url(/images/map.PNG);
+    background-image: url(/images/map.png);
     background-position:center;
     background-size: contain 100%;
     background-repeat:no-repeat;
