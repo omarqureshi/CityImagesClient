@@ -142,6 +142,80 @@ section.map {
  /*Navigation*/
  
 
+#directions {
+    height: 12%;
+    background: #046DB2;
+}
+
+#map-canvas {
+    height: 40%;
+}
+
+#next-step-image-container {
+    height: 48%;
+}
+
+#next-step-image {
+    height: 100%;
+    background-image:url('/images/townhall.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat:no-repeat;    
+}
+
+#next-step-image .infoview {
+    height: 100%;  
+    background-image:url('/images/photofade.png');
+    background-position: bottom left;
+    background-repeat:repeat-x;
+    color:#FFF;
+    position: relative;
+}
+
+.infoview div {
+     position:absolute;
+     bottom:0px;
+ }
+ 
+.infoview h2 {
+    font-size: 1.2em;
+    margin: 0.83em 10px 0;
+}
+
+.infoview h3 {
+    font-size: 1em;
+    margin: 0.5em 10px 0;
+}
+
+#next, #previous, #step {
+    color: white;
+}
+
+#next, #previous {
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+}
+
+#next {
+    float: right;
+}
+
+#previous {
+    float: left;
+}
+
+#step {
+    float: left;
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 120px);
+    height: 100%;
+}
+    
+
 #step div {
 background-position:bottom left;
 background-repeat:no-repeat;
@@ -153,7 +227,7 @@ background-repeat:no-repeat;
     background-position:50% 50%;
     text-indent: -9999px;
     width:36px;
-    height:60px;
+    height: 100%;
 }
 #directions #next {
      background-image: url('/images/arrowright.png');
@@ -161,7 +235,7 @@ background-repeat:no-repeat;
     background-position:50% 50%;
     text-indent: -9999px;
     width:36px;
-    height:60px;
+    height: 100%;
 }
 
 .turn-left {
@@ -177,3 +251,4 @@ padding-left:90px;
 min-height:65px;
 text-align:left;
 }
+

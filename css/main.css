@@ -29,52 +29,6 @@ html, body {
     padding: 0px
 }
 
-#directions {
-    height: 15%;
-    background: #046DB2;
-}
-
-#map-canvas {
-    height: 40%;
-}
-
-#next-step-image-container {
-    height: 45%;
-}
-
-#next-step-image {
-    height: 100%;
-    background: black;
-}
-
-#next, #previous, #step {
-    color: white;
-}
-
-#next, #previous {
-    width: 70px;
-    padding: 5px;
-    text-align: center;
-}
-
-#next {
-    float: right;
-}
-
-#previous {
-    float: left;
-}
-
-#step {
-    float: left;
-    padding: 5px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: calc(100% - 120px);
-}
-    
-
 
 
 /*
