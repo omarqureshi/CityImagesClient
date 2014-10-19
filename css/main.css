@@ -30,7 +30,7 @@ html, body {
 }
 
 #directions {
-    height: 10%;
+    height: 15%;
     background: #046DB2;
 }
 
@@ -39,7 +39,7 @@ html, body {
 }
 
 #next-step-image-container {
-    height: 50%;
+    height: 45%;
 }
 
 #next-step-image {

@@ -48,11 +48,12 @@ function initialize() {
                 var currentPositionMarkers = new Array();
 
                 var addCurrentPositionMarker = function(step) {
-                    console.log(step);
+                    console.log(step.startLocation);
+                    console.log(map);
                     var marker = new google.maps.Marker({
                         position: step.startLocation,
                         map: map,
-                        icon: "http://cityimages.local/img/102-walk@2x.jpg"
+                        icon: "/images/man.png"
                     });
                 }
 
@@ -107,9 +108,9 @@ function initialize() {
 
                 })
 
-                if (status == google.maps.DirectionsStatus.OK) {
-                    directionsDisplay.setDirections(response);
-                }
+                    if (status == google.maps.DirectionsStatus.OK) {
+                        directionsDisplay.setDirections(response);
+                    }
             });
         })
     });
