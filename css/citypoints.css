@@ -1,0 +1,116 @@
+/* Form CSS */
+
+body {
+     background-color:#046DB2;
+}
+
+#splash .button {
+        margin-top:200px;
+ }
+
+h1#logo {
+    background-image: url('../images/logotransparent.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    width: 100%;
+    padding-top: 160px;
+    height: 0;
+    text-indent: -9999px;
+    max-width:524px;  
+}
+
+
+   h2{
+      color:#FFF;
+    }
+    form.custom .custom.dropdown{
+      height: 45px;
+    }
+    .search label{
+      margin-bottom: 10px;
+      color:#FFF;
+      height: 48px;
+      line-height: 48px;
+    }
+    form.custom .custom.dropdown{
+      padding-top: 5px;
+    }
+    form.custom .custom.dropdown .selector{
+      top: 5px;
+    }
+    .search .prefix, .search .searchbox {
+      height: 48px;
+      line-height: 48px;
+    }
+    
+section.map {  
+    background-image: url(../images/map.png);
+    background-position:center;
+    background-size: contain 100%;
+    background-repeat:no-repeat;
+
+    height:400px;
+    width: 100%;
+}    
+    
+.top-bar {
+    background-color:#FFF;
+    background-image: url('../images/bluelogo.png');
+    background-size: contain;
+    background-repeat:no-repeat;    
+    background-position:right;    
+}
+
+.top-bar .name h1 a {
+    color: #046DB2;
+    display: block;
+    font-weight: normal;
+    padding: 0 15px;
+    width: 50%;
+}
+    
+.glyphicons-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 8px 0 0;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url(../images/glyphicons.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  *margin-right: .3em;
+}
+
+.parallax-background {
+	background-color: #0078A0;
+	height: 620px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+}
+
+.intro-text {
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	margin-top: 15%;
+}
+.parallax-content {
+	max-width: 100%;
+	position: relative;
+	top: 500px;
+	padding: 50px;
+	font-size: 20px;
+	background-color: #fff;
+}    
+
+.slick-slider {
+    margin-bottom: 0px;
+}
