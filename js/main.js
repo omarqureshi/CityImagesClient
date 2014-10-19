@@ -48,8 +48,6 @@ function initialize() {
                 var currentPositionMarkers = new Array();
 
                 var addCurrentPositionMarker = function(step) {
-                    console.log(step.startLocation);
-                    console.log(map);
                     var marker = new google.maps.Marker({
                         position: step.startLocation,
                         map: map,
@@ -57,8 +55,26 @@ function initialize() {
                     });
                 }
 
+                var showImage = function(pois) {
+                    if (pois.length > 0) {
+                        $("#next-step-image").css('background-image', 'url(' + pois[0].image_url + ')');
+                    }
+                }
+
                 var displayStep = function(stepIdx) {
                     var currentStep = steps[stepIdx]
+                    console.log(currentStep);
+                    if (currentStep.pois) {
+                        showImage(currentStep.pois);
+                    } else {
+                        $.get('/api/v1/lookup.json?lat=' + currentStep.start_location.k + "&lon=" + currentStep.start_location.B, function() {
+                        }).done(function(res) {
+                            currentStep.pois = res;
+                            showImage(res);
+                        })
+                    }
+
+
                     $("#step").html("<div class='"+currentStep.maneuver+"'>"+currentStep.instructions+"</div>");
                     addCurrentPositionMarker(currentStep);
                 }
