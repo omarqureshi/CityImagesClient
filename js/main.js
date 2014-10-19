@@ -61,6 +61,29 @@ function initialize() {
                     }
                 }
 
+
+                var contentForPOI = function(poi) {
+                    var content = "<div><h2>"+ poi.name;
+                    if (poi.category) {
+                        content += " <span>("+ poi.category + ")</span></h2>";
+                    } else {
+                        content += "</h2>";
+                    }
+                    if (poi.owner) {
+                        content += "<h3>" + poi.owner + "</h3>";
+                    }
+                    content += "</div>"
+                    return content;
+                }
+
+
+                var showInfoView = function(pois) {
+                    if (pois.length > 0) {
+                        $("#next-step-image .infoview").html(contentForPOI(pois[0]));
+                    }
+                }
+
+
                 var displayStep = function(stepIdx) {
                     var currentStep = steps[stepIdx]
                     console.log(currentStep);
@@ -71,12 +94,12 @@ function initialize() {
                         }).done(function(res) {
                             currentStep.pois = res;
                             showImage(res);
+                            showInfoView(res);
                         })
                     }
-
-
                     $("#step").html("<div class='"+currentStep.maneuver+"'>"+currentStep.instructions+"</div>");
                     addCurrentPositionMarker(currentStep);
+
                 }
 
 
@@ -103,17 +126,16 @@ function initialize() {
                                 var category = poi.category
                                 var latLong = new google.maps.LatLng(poi.lat, poi.lon);
                                 var content = "<div class='infoview'><h2>"+title+"<span> ("+category+")</span></h2><h3>"+owner+"</h3></div>";
-                                var infowindow = new google.maps.InfoWindow({
-                                    content: content
-                                });
                                 var marker = new google.maps.Marker({
                                     position: latLong,
                                     map: map,
-                                    title: title
+                                    title: title,
+                                    poi: poi
                                 });
                                 google.maps.event.addListener(marker, 'click', function() {
-                                    $(".infoview").parent().parent().parent().parent().hide() // LOL!
-                                    infowindow.open(map, marker);
+                                    $("#next-step-image").css('background-image', 'url(' + poi.image_url + ')');
+                                    console.log(contentForPOI(poi));
+                                    $(".infoview").html(contentForPOI(poi));
                                 });
 
                             }
