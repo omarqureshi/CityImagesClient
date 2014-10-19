@@ -114,3 +114,44 @@ section.map {
 .slick-slider {
     margin-bottom: 0px;
 }
+
+
+.slick-slide {
+     position:relative;
+ }
+
+.slick-slider .info_overlay {
+    display:none;
+    background-image:url('/images/photofade.png');
+    background-position: bottom left;
+    background-repeat:repeat-x;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    padding: 30% 10px 0 10px;
+    color:#FFF;
+ }
+ 
+ .slick-slider .slick-active .info_overlay {
+    display:block;
+ }
+ 
+   
+  
+ /*Navigation*/
+ 
+
+#step div {
+padding-left:90px;
+min-height:65;
+background-position:bottom left;
+}
+ 
+.turn-left {
+  background-image: url(/images/turnleft.png);
+}
+
+.turn-right {
+  background-image: url(/images/turnright.png);
+}
