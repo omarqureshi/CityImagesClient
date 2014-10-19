@@ -52,6 +52,16 @@ section.map {
     height:400px;
     width: 100%;
 }    
+
+section.map-results {  
+    background-position:center;
+    background-size: contain 100%;
+    background-repeat:no-repeat;
+
+    height:400px;
+    width: 100%;
+}    
+
     
 .top-bar {
     background-color:#FFF;
@@ -157,7 +167,7 @@ section.map {
 
 #next-step-image {
     height: 100%;
-    background-image:url('/images/townhall.jpg');
+    background-image:url('http://cbssacramento.files.wordpress.com/2012/11/club-retro.jpg');
     background-position:center;
     background-size: cover;
     background-repeat:no-repeat;    
