@@ -10,16 +10,32 @@ body {
 
 h1#logo {
     background-image: url('/images/logotransparent.png');
+
+    background-repeat: no-repeat;
     background-size: contain;
-    background-repeat:no-repeat;
-    width: 100%;
+    height: 200px;
+    margin: 50% auto 0;
+    max-width: 524px;
     padding-top: 160px;
-    height: 0;
     text-indent: -9999px;
-    max-width:524px;  
-}
+    width: 80%;
+ }
+    
+ #splash{
+  background-image: url('/images/splash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
 
+ }
 
+    #welcomeDave {
+      padding-top: 25px;
+    }
+
+    
    .search h2{
       color:#FFF;
     }
